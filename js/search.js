@@ -1,6 +1,6 @@
 function search(event) {
     event.preventDefault(); // Prevent default form submission behavior
-    var popularProperties = ["balete", "anilao", "lian", "lumbang", "matamis"]; // List of popular properties
+    var popularProperties = ["mexico", "calantas", "storosario"]; // List of popular properties
     var searchInput = document.getElementById("searchInput").value.trim(); // Get input value
     
     // Check if the input matches any popular property (case-insensitive)
