@@ -92,6 +92,8 @@ h3 {
 h4 {
   font-size: var(--h4-font-size);
   text-align: center;
+  color: #154662;
+  margin-top: 30px;
 }
 
 h5 {
@@ -400,7 +402,7 @@ strong {
 .dropdown-item:active,
 .dropdown-item:focus, 
 .dropdown-item:hover {
-  background: var(--primary-color);
+  background: #000000;
   color: var(--white-color);
 }
 
@@ -584,6 +586,20 @@ strong {
   width: 250px;
   height: 250px;
 }
+
+.about-section .row {
+  display: flex;
+  align-items: center;
+}
+
+.about-section .about-content {
+  margin-right: 20px; /* Optional margin for spacing */
+}
+
+.about-section h4 {
+  margin-top: 0; /* Reset top margin */
+}
+
 
 /*---------------------------------------
   FEATURED              
@@ -1001,7 +1017,7 @@ strong {
 /*---------------------------------------
   RESPONSIVE STYLES               
 -----------------------------------------*/
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 380px) {
   h1 {
     font-size: 48px;
   }
@@ -1016,6 +1032,11 @@ strong {
 
   h4 {
     font-size: 28px;
+  }
+
+  h4 {
+    font-size: 22px;
+    align-items: left;
   }
 
   h5 {
@@ -1063,11 +1084,13 @@ strong {
   .about-image {
     width: 260px;
     height: 260px;
+    flex-direction: column;
   }
 
   .about-image-small {
     width: 180px;
     height: 180px;
+          flex-direction: column;
   }
 
   .custom-block,
@@ -1084,13 +1107,18 @@ strong {
   }
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 380px) {
   .site-footer {
     text-align: center;
+    flex-direction: column;
+  }
+  h4 {
+    font-size: 22px;
+    align-items: left;
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 100px) {
   h1 {
     font-size: 40px;
   }
@@ -1105,10 +1133,12 @@ strong {
 
   h4 {
     font-size: 22px;
+    align-items: left;
   }
 
   h5 {
     font-size: 20px;
+    
   }
 
   .page-link {
@@ -1120,11 +1150,13 @@ strong {
   .about-image {
     width: 205px;
     height: 205px;
+    flex-basis: calc(20% - 5px); /* Set width of each item to 50% minus gap */
   }
 
   .about-image-small {
     width: 145px;
     height: 145px;
+    flex-basis: calc(20% - 5px); /* Set width of each item to 50% minus gap */
   }
 
   .copyright-text-wrap {
