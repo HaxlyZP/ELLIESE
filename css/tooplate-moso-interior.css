@@ -77,9 +77,13 @@ h6 {
 }
 
 h1 {
-  font-size: var(--h1-font-size)
+  font-size: var(--h1-font-size);
   font-weight: var(--font-weight-bold);
+  color: #ffffff; /* Text fill color */
+  -webkit-text-stroke: 1px black; /* Stroke width and color */
+  text-stroke: 1px black; /* Stroke width and color */
 }
+
 
 h2 {
   font-size: var(--h2-font-size);
